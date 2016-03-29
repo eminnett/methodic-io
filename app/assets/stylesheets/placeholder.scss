@@ -1,6 +1,7 @@
 $MEDIUM_GREY: #666666;
 $DARK_GREY: #333333;
-$OFF_WHITE: #FAFAFA;
+$WHITE: #FFFFFF;
+$OFF_WHITE: #E8E1DA;
 $PURPLE: #5F0647;
 $YELLOW: #FFCE00;
 $ORANGE: #F99808;
@@ -8,7 +9,12 @@ $RED: #F93D08;
 $DARK_BLUE: #130957;
 
 html {
-    background-color: $OFF_WHITE;
+    height: 100%;
+
+    /* Old browsers */
+    background: $WHITE;
+     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: linear-gradient(to bottom, $WHITE 0%, $OFF_WHITE 100%);
 }
 
 body {
