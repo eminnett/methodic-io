@@ -1,0 +1,52 @@
+$MEDIUM_GREY: #666666;
+$DARK_GREY: #333333;
+$OFF_WHITE: #FAFAFA;
+$PURPLE: #5F0647;
+$YELLOW: #FFCE00;
+$ORANGE: #F99808;
+$RED: #F93D08;
+$DARK_BLUE: #130957;
+
+html {
+    background-color: $OFF_WHITE;
+}
+
+body {
+    margin: 0 20%;
+}
+
+header {
+    margin-top: 50px;
+    .logo {
+        position: relative;
+        left: 25%;
+        width: 72%;
+    }
+    .title {
+        margin: 0 25% 40px;
+        color: $PURPLE;
+    }
+}
+
+main {
+    border-left: 3px solid $PURPLE;
+    border-right: 3px solid $PURPLE;
+    padding: 0 30px;
+    color: $MEDIUM_GREY;
+
+    .subheading {
+        color: $DARK_BLUE;
+        margin-top: 40px;
+        &.first {
+            margin-top: 0;
+        }
+    }
+
+    a {
+        color: $RED;
+        text-decoration: none;
+        &:hover {
+            color: $ORANGE;
+        }
+    }
+}
