@@ -8,6 +8,8 @@ $ORANGE: #F99808;
 $RED: #F93D08;
 $DARK_BLUE: #130957;
 
+@import url(https://fonts.googleapis.com/css?family=Maven+Pro:400,700);
+
 html {
     height: 100%;
 
@@ -19,6 +21,8 @@ html {
 
 body {
     margin: 0 20%;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
 }
 
 header {
@@ -41,8 +45,9 @@ main {
     color: $MEDIUM_GREY;
 
     .subheading {
-        color: $DARK_BLUE;
         margin-top: 40px;
+        color: $DARK_BLUE;
+        font-weight: 700;
         &.first {
             margin-top: 0;
         }
@@ -54,5 +59,9 @@ main {
         &:hover {
             color: $ORANGE;
         }
+    }
+
+    p {
+        line-height: 1.5rem;
     }
 }
