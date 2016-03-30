@@ -22,6 +22,10 @@ html {
 body {
     font-family: 'Maven Pro', sans-serif;
     font-weight: 400;
+
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 header {
@@ -65,13 +69,6 @@ main {
     }
 }
 
-@media screen and (min-width: 320px) {
-    body {
-        width: auto;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-}
 // TODO: Add CSS animations to make the transitions between breakpoints nicer.
 
 @media screen and (min-width: 480px) {
