@@ -11,12 +11,7 @@ $DARK_BLUE: #130957;
 @import url(https://fonts.googleapis.com/css?family=Maven+Pro:400,700);
 
 html {
-    height: 100%;
-
-    /* Old browsers */
-    background: $WHITE;
-     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    background: linear-gradient(to bottom, $WHITE 0%, $OFF_WHITE 100%);
+    background: $OFF_WHITE;
 }
 
 body {
@@ -74,6 +69,19 @@ main {
     p {
         line-height: 1.5rem;
     }
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    /* Old browsers */
+    background: $OFF_WHITE;
+     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: linear-gradient(to bottom, $WHITE 0%, $OFF_WHITE 100%);
 }
 
 // TODO: Add CSS animations to make the transitions between breakpoints nicer.
