@@ -113,6 +113,16 @@ main {
         width: 460px;
         margin: 0 auto;
     }
+    header {
+        .logo {
+            margin-left: 0;
+            left: 116px;
+        }
+        .title {
+            margin-left: 0;
+            left: 112px;
+        }
+    }
     main {
         .subheading {
             font-size: 1.4rem;
@@ -131,12 +141,10 @@ main {
     header {
         margin-top: 30px;
         .logo {
-            margin-left: 0;
-            left: 25%;
-            width: 72%;
+            left: 150px;
+            width: 432px;
         }
         .title {
-            margin-left: 0;
             font-size: 3.67rem;
             left: 144px;
             width: 316px;
@@ -158,6 +166,10 @@ main {
     }
 
     header {
+        .logo {
+            left: 160px;
+            width: 461px;
+        }
         .title {
             font-size: 3.9rem;
             left: 154px;
@@ -172,6 +184,10 @@ main {
     }
 
     header {
+        .logo {
+            left: 194px;
+            width: 562px;
+        }
         .title {
             font-size: 4.75rem;
             left: 189px;
