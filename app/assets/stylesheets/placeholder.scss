@@ -10,6 +10,13 @@ $DARK_BLUE:   #130957;
 
 @import url(https://fonts.googleapis.com/css?family=Maven+Pro:400,700);
 
+@mixin transition {
+    -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
 html {
     background: $OFF_WHITE;
     overflow-x: hidden;
@@ -22,6 +29,8 @@ body {
     width: auto;
     margin-left: 10px;
     margin-right: 10px;
+
+    @include transition;
 }
 
 header {
@@ -31,6 +40,8 @@ header {
         margin-left: 50%;
         left: -116px;
         width: 333px;
+
+        @include transition;
     }
     .title {
         position: relative;
@@ -41,6 +52,8 @@ header {
         color: $PURPLE;
         font-size: 2.85rem;
         font-weight: 400;
+
+        @include transition;
     }
 }
 
@@ -51,11 +64,16 @@ main {
     margin-bottom: 30px;
     color: $MEDIUM_GREY;
 
+    @include transition;
+
     .subheading {
         margin-top: 40px;
         color: $DARK_BLUE;
         font-weight: 700;
         font-size: 1.2rem;
+
+        @include transition;
+
         &.first {
             margin-top: 0;
         }
@@ -72,6 +90,8 @@ main {
     .copy {
         line-height: 1.5rem;
         font-size: 0.9rem;
+
+        @include transition;
     }
 }
 
@@ -87,8 +107,6 @@ main {
      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     background: linear-gradient(to bottom, $WHITE 0%, $OFF_WHITE 100%);
 }
-
-// TODO: Add CSS animations to make the transitions between breakpoints nicer.
 
 @media screen and (min-width: 480px) {
     body {
