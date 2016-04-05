@@ -8,6 +8,9 @@
     = csrf_meta_tags
     = render '/shared/icons'
   %body
+    = render '/shared/header'
     = yield
-  .footer-scripts
-    = render '/shared/google_analytics'
+    = render '/shared/footer'
+    .background
+    .footer-scripts
+      = render '/shared/google_analytics'
