@@ -4,6 +4,10 @@ module GoogleConfigHelper
     config[:analytics_tracking_id]
   end
 
+  def self.site_verification_code
+    config[:site_verification_code]
+  end
+
   private
 
   def self.config_path
