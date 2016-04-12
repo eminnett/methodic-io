@@ -33,6 +33,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Mina for deployment
 gem 'mina'
+gem 'mina-newrelic'
 
 # Use New Relic for application monitoring
 gem 'newrelic_rpm'
