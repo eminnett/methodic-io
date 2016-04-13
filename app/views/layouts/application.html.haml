@@ -1,10 +1,10 @@
 !!!
 %html
   %head
+    %meta{:name => "google-site-verification", :content => GoogleConfigHelper.site_verification_code}
     %meta{:charset => 'UTF-8'}/
     %title=placeholder_meta_title
     %meta{:name => 'description', :content => placeholder_meta_description}
-    %meta{:name => "google-site-verification", :content => GoogleConfigHelper.site_verification_code}
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
