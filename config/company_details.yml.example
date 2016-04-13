@@ -1,0 +1,18 @@
+:registered_company:
+  :name: Example Limited
+  :number: XXXXXXX
+  :vat_registration: XXX XXXX XX
+  :location: England and Wales
+  :github_profile: https://github.com/example-ltd
+  :address:
+    :line_1: 1 Example Street
+    :line_2: Example Village
+    :city: London
+    :county: London
+    :postcode: XXXX XXX
+    :country: United Kingdom
+:director:
+  :name: John Doe
+  :title: Company Director
+  :email: jd@example.com
+  :github_profile: https://github.com/example
