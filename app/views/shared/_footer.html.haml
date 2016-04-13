@@ -1,29 +1,23 @@
+- company  = CompanyDetailsHelper.registered_company
+- director = CompanyDetailsHelper.director
 %footer
-  .footer-copy.legal
-    Copyright &copy; 2016 Methodic Limited. All rights reserved.
-    Methodic Limited is a company registered in England and Wales with
-    company number 9402598 and VAT registration number 205 7155 29.
+  .footer-copy.legal!="Copyright &copy; #{Time.now.year} #{company[:name]}. " |
+    "All rights reserved. #{company[:name]} is a company registered in "      |
+    "#{company[:location]} with company number #{company[:number]} and VAT "  |
+    "registration number #{company[:vat_registration]}."                      |
 
   .footer-copy.director-contact
-    .contact-detail.name
-      Edward Minnett,
-    .contact-detail.position
-      Company Director,
+    .contact-detail.name="#{director[:name]},"
+    .contact-detail.position="#{director[:title]},"
     = succeed "," do
-      %a.contact-detail.email{:href => "mailto:ed@methodic.io"} ed@methodic.io
-    %a.contact-detail.github{:href => "https://github.com/eminnett"} GitHub Profile
+      %a.contact-detail.email{:href => "mailto:#{director[:email]}"} director[:email]
+    %a.contact-detail.github{:href => director[:github_profile]} GitHub Profile
 
   .footer-copy.business-address
-    .contact-detail.company
-      Methodic Limited,
-    .contact-detail.address
-      7 Willow Lane,
-    .contact-detail.town
-      Milton, Abingdon,
-    .contact-detail.county
-      Oxfordshire,
-    .contact-detail.post-code
-      OX14 4EG,
-    .contact-detail.country
-      United Kingdom
-    %a.contact-detail.github{:href => "https://github.com/methodic-io"} GitHub Organisation
+    .contact-detail.company="#{company[:name]},"
+    .contact-detail.street="#{company[:address][:street]},"
+    .contact-detail.city="#{company[:address][:street]},"
+    .contact-detail.county="#{company[:address][:county]},"
+    .contact-detail.postcode="#{company[:address][:postcode]},"
+    .contact-detail.country=company[:address][:country]
+    %a.contact-detail.github{:href => company[:github_profile]} GitHub Organisation
