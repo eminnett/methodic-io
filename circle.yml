@@ -1,3 +1,9 @@
 machine:
   ruby:
     version: 2.3.0
+
+dependencies:
+  pre:
+    - cp config/company_details.yml.example config/company_details.yml
+    - cp config/google_config.yml.example config/google_config.yml
+    - cp config/newrelic.yml.example config/newrelic.yml
