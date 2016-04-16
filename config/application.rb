@@ -23,6 +23,10 @@ module Methodic
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
 
+    # Since the lib folder is not auto loaded in Rails, we’ll need to
+    # tell Rails to do that
+    config.autoload_paths += %W(#{config.root}/lib)
+
     # We want to use our custom error pages, not the public static pages
     # bundled with Rails. 
     config.exceptions_app = self.routes
