@@ -3,7 +3,7 @@
 
 require 'rails_helper'
 
-describe 'shared/_environment_banner.html.haml' do
+RSpec.describe 'shared/_environment_banner.html.haml' do
   let(:company_details) { CompanyDetailsHelper }
 
   it 'displays the banner for the test environment' do

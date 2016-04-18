@@ -3,7 +3,7 @@
 
 require 'rails_helper'
 
-describe 'shared/_footer.html.haml' do
+RSpec.describe 'shared/_footer.html.haml' do
   let(:company_details) { CompanyDetailsHelper }
 
   it 'displays the copyright' do
