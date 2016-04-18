@@ -8,8 +8,8 @@ describe 'shared/_footer.html.haml' do
 
   it 'displays the copyright' do
     render
-    expected_text = "Copyright &copy; #{Time.now.year} " +
-      company_details.registered_company[:name]
+    expected_text = "Copyright &copy; #{Time.current.year} " +
+                    company_details.registered_company[:name]
     expect(rendered).to match expected_text
   end
 
