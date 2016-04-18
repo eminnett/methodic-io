@@ -5,6 +5,7 @@ CI:master  [![Circle CI](https://circleci.com/gh/methodic-io/methodic-io/tree/ma
 CI:develop [![Circle CI](https://circleci.com/gh/methodic-io/methodic-io/tree/develop.svg?style=svg)](https://circleci.com/gh/methodic-io/methodic-io/tree/develop)
 
 [![Inline docs](http://inch-ci.org/github/methodic-io/methodic-io.svg?branch=develop)](http://inch-ci.org/github/methodic-io/methodic-io)
+[![Coverage Status](https://coveralls.io/repos/github/methodic-io/methodic-io/badge.svg?branch=develop)](https://coveralls.io/github/methodic-io/methodic-io?branch=develop)
 
 The initial implementation of the public facing Methodic.io website is a simple single page placeholder. Rails is overkill for this sort of site, but the longer term goal is to incorporate Methodic.io as the public front-end of the Methodic Microservice Ecosystem (MME) once it is sufficiently mature. Rails will be a suitable framework once the richer functionality has been implemented.
 
