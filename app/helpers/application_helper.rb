@@ -3,7 +3,7 @@
 
 module ApplicationHelper
   def placeholder_meta_title
-    "Methodic | Software + Research."
+    'Methodic | Software + Research.'
   end
 
   def placeholder_meta_description

@@ -10,7 +10,7 @@ gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Haml for views
-gem "haml-rails", "~> 0.9"
+gem 'haml-rails', '~> 0.9'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -47,10 +47,10 @@ group :development, :test do
   gem 'byebug'
 
   # Use Rspec for testing.
-  gem "rspec-rails"
+  gem 'rspec-rails'
 
   # Use Rubocop for static code analysis
-  gem 'rubocop', require: false 
+  gem 'rubocop', require: false
 end
 
 group :development do
