@@ -20,9 +20,9 @@ describe "shared/_footer.html.haml" do
 
   it "indicates where the business is registered" do
     render
-    company_name     = company_details.registered_company[:name]
-    company_location = company_details.registered_company[:location]
-    expected_text    = "#{company_name} is a company registered in #{company_location}"
+    name          = company_details.registered_company[:name]
+    location      = company_details.registered_company[:location]
+    expected_text = "#{name} is a company registered in #{location}"
     expect(rendered).to match expected_text
   end
 
@@ -33,7 +33,8 @@ describe "shared/_footer.html.haml" do
 
   it "includes the company VAT number" do
     render
-    expect(rendered).to match company_details.registered_company[:vat_registration]
+    vat_details = company_details.registered_company[:vat_registration]
+    expect(rendered).to match vat_details
   end
 
   it "includes the director's name" do
