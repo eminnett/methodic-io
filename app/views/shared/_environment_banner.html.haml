@@ -1,2 +1,3 @@
-%div{:class => "environment-banner #{Rails.env}"}
-  .copy="Methodic.io #{Rails.env.capitalize} Environment"
+- unless env.production?
+  %div{:class => "environment-banner #{env}"}
+    .copy="Methodic.io #{env.capitalize} Environment"

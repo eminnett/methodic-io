@@ -1,5 +1,4 @@
-- unless Rails.env.production?
-  = render "/shared/environment_banner"
+= render "/shared/environment_banner", :env => Rails.env
 %header
   = image_tag "methodic_logo.svg",  :alt => "Methodic Logo", :class => "logo"
   %h1.title
