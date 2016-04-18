@@ -2,6 +2,7 @@ $WHITE:       #FFFFFF;
 $LIGHT_GREY:  #AAAAAA;
 $MEDIUM_GREY: #666666;
 $DARK_GREY:   #333333;
+$BLACK:       #000000;
 $OFF_WHITE:   #E8E1DA;
 $PURPLE:      #5F0647;
 $YELLOW:      #FFCE00;
@@ -39,6 +40,18 @@ body {
         &:hover {
             color: $ORANGE;
         }
+    }
+}
+
+.environment-banner {
+    padding: 10px;
+    color: $WHITE;
+    text-align: center;
+    &.development {
+        background: $BLACK;
+    }
+    &.staging {
+        background: $LIGHT_GREY;
     }
 }
 
