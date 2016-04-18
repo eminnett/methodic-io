@@ -32,7 +32,7 @@ module Methodic
     config.active_record.raise_in_transactional_callbacks = true
 
     # We want to use our custom error pages, not the public static pages
-    # bundled with Rails. 
-    config.exceptions_app = self.routes
+    # bundled with Rails.
+    config.exceptions_app = routes
   end
 end
