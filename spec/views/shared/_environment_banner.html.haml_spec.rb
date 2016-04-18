@@ -16,5 +16,4 @@ describe 'shared/_environment_banner.html.haml' do
            env: ActiveSupport::StringInquirer.new('production')
     expect(rendered).to be_empty
   end
-
 end
