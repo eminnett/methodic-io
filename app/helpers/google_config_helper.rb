@@ -1,6 +1,9 @@
 # encoding: utf-8
 # frozen_string_literal: true
 
+# Encapsulates configuration settings for Google service integrations.
+# - Google Analytics
+# - Google Search Console
 module GoogleConfigHelper
 
   def self.analytics_tracking_id

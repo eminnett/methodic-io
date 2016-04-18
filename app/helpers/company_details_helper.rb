@@ -1,6 +1,8 @@
 # encoding: utf-8
 # frozen_string_literal: true
 
+# Encapsulates settings that describe the company and company director for the
+# Methodic website.
 module CompanyDetailsHelper
 
   def self.registered_company
