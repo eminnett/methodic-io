@@ -4,7 +4,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5'
+gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -48,14 +48,15 @@ group :development, :test do
 
   # Use Rspec for testing.
   gem 'rspec-rails'
-
+  # Use Coveralls for test coverage
+  gem 'coveralls', require: false
   # Use Rubocop for static code analysis
   gem 'rubocop', require: false
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  gem 'web-console'
 
   # Spring speeds up development by keeping your application running in
   # the background. Read more: https://github.com/rails/spring
