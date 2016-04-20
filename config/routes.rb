@@ -1,9 +1,12 @@
+# encoding: utf-8
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   root to: "static#placeholder"
 
   get "/articles",       to: "articles#index"
   get "/articles/:slug", to: "articles#show"
 
-  match "/404", :to => "errors#not_found", :via => :all
-  match "/500", :to => "errors#internal_server_error", :via => :all
+  match '/404', to: 'errors#not_found', via: :all
+  match '/500', to: 'errors#internal_server_error', via: :all
 end
